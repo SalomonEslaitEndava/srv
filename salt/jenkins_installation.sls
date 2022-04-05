@@ -1,7 +1,7 @@
 java-install:
     pkg.installed:
-         pkgs:
+        - pkgs:
             - java-1.8.0-openjdk
 
-iclude:
+include:
     - jenkins
