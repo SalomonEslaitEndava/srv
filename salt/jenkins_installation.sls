@@ -5,4 +5,4 @@ java-install:
       - default-jdk
 
 include:
-  - ./pillar/jenkins
+  - jenkins
