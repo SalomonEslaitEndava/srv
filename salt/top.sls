@@ -1,3 +1,3 @@
 base:
-    '*':
-        - jenkins_installation
+  '*':
+    - jenkins_installation
