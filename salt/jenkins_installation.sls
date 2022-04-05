@@ -4,4 +4,4 @@ java-install:
       - java-1.8.0-openjdk
 
 include:
-  - pillar/jenkins
+  - ./pillar/jenkins
