@@ -4,5 +4,5 @@ java-install:
       - default-jre
       # - java-1.8.0-openjdk
 
-# include:
-#   - ./pillar/jenkins
+include:
+  - ./pillar/jenkins
