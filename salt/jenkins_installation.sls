@@ -2,7 +2,7 @@ java-install:
   pkg.installed:
     - pkgs:
       - default-jre
-      # - java-1.8.0-openjdk
+      - default-jdk
 
 include:
-  - jenkins
+  - ./pillar/jenkins
