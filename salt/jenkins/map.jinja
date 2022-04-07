@@ -1,0 +1,12 @@
+{% import_yaml "jenkins/defaults.yaml" as defaults %}
+{% import_yaml "jenkins/osmap.yaml" as osmap %}
+
+{% set jenkins = salt['grains.filter_by'](
+  defaults,
+  merge=salt['grains.filter_by'](
+        osmap,
+        grain='os_family',
+        merge=salt['pillar.get']('jenkins:lookup', {}),),
+  base = 'jenkins',
+)
+%}
